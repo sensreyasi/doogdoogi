@@ -1,0 +1,159 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #312c51;
+
+
+
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+
+.dasbordleft{
+    content: "";
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    background-color: #312c51;
+
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+
+
+
+
+
+
+    padding-top: 60px;
+}
+.dasbordleft > *{
+
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+
+
+
+
+    transition: 0.5s;
+
+}
+
+
+.dasbordright {
+
+    height: 100%;
+    width: 40%;
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #312c51;
+
+
+
+
+
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+.navcol{
+    //background-image: url(../images/sidebar-01.jpg);
+    //background-size: cover ;
+    backdrop-filter: blur(10px);
+    /*opacity: 100%; */
+}
+
+.sidenavlink {
+
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-right: 5px;
+}
+
+.sidenavlink:hover {
+
+    color: #f1f1f1;
+    border: #f1f1f1 solid 2px;
+    font-size: 30px;
+}
+.sidenavdiv{
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-right: 5px;
+}
+
+.sidenavimg{
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav .closebtn:hover {
+    border: none;
+    font-size: 40px;
+
+}
+
+
+.sm-text {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#main h2,p, span {
+    color:#fff;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
